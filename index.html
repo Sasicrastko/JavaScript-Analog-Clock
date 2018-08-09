@@ -27,6 +27,17 @@ div.minute-hand {
     transform: rotate(0deg);
 }
 
+div.hour-hand {
+    position: absolute;
+    top: 48.75%;
+    left: 0%;
+    width: 100%;
+    height: 2.5%;
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Safari 3-8 */
+    transform: rotate(90deg);
+}
+
 div.inner-circle {
     position: absolute;
     top: 2%;
@@ -36,6 +47,7 @@ div.inner-circle {
     background-color: black;
     border-radius: 50%;
 }
+
 div.outer-circle {
     position: absolute;
     width: 410px;
@@ -76,10 +88,27 @@ div.outer-circle {
   top: 0%;
   left:50%;
   background: yellow;
-  width: 35%;
+  width: 38%;
   height: 100%;
 }
 
+.transparent3{
+  position: absolute;
+  background-color: transparent;
+  top: 0%;
+  left:0%;
+  width: 50%;
+  height: 100%;
+}
+
+.visible3{
+  position: absolute;
+  top: 0%;
+  left:50%;
+  background: blue;
+  width: 30%;
+  height: 100%;
+}
 
 </style>
 
@@ -93,6 +122,10 @@ div.outer-circle {
   <div class="minute-hand">
     <div class="transparent2"></div>
     <div class="visible2"></div>
+  </div>
+  <div class="hour-hand">
+    <div class="transparent3"></div>
+    <div class="visible3"></div>
   </div>
 </div>
 </div>
