@@ -9,10 +9,22 @@ div.second-hand {
     left: 0%;
     width: 100%;
     height: 1%;
-    background-color: transaprent;
+    /* background-color: transaprent; */
     -ms-transform: rotate(-45deg); /* IE 9 */
     -webkit-transform: rotate(-45deg); /* Safari 3-8 */
     transform: rotate(-45deg);
+}
+
+div.minute-hand {
+    position: absolute;
+    top: 49%;
+    left: 0%;
+    width: 100%;
+    height: 2%;
+    /* background-color: transaprent; */
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Safari 3-8 */
+    transform: rotate(0deg);
 }
 
 div.inner-circle {
@@ -31,6 +43,7 @@ div.outer-circle {
     background-color: gray;
     border-radius: 50%;
 }
+
 .transparent1{
   position: absolute;
   background-color: transparent;
@@ -40,7 +53,7 @@ div.outer-circle {
   height: 100%;
 }
 
-.visible{
+.visible1{
   position: absolute;
   top: 0%;
   left:50%;
@@ -48,6 +61,26 @@ div.outer-circle {
   width: 45%;
   height: 100%;
 }
+
+.transparent2{
+  position: absolute;
+  background-color: transparent;
+  top: 0%;
+  left:0%;
+  width: 50%;
+  height: 100%;
+}
+
+.visible2{
+  position: absolute;
+  top: 0%;
+  left:50%;
+  background: yellow;
+  width: 35%;
+  height: 100%;
+}
+
+
 </style>
 
 </head>
@@ -55,7 +88,11 @@ div.outer-circle {
 <div class="inner-circle">
   <div class="second-hand">
     <div class="transparent1"></div>
-    <div class="visible"></div>
+    <div class="visible1"></div>
+  </div>
+  <div class="minute-hand">
+    <div class="transparent2"></div>
+    <div class="visible2"></div>
   </div>
 </div>
 </div>
