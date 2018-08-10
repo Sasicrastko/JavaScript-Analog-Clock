@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 <style>
+body{
+  background-color: lightgrey;
+}
+
 div.second-hand {
     position: absolute;
     top: 49.5%;
     left: 0%;
     width: 100%;
     height: 1%;
-    /* background-color: transaprent; */
     -ms-transform: rotate(-45deg); /* IE 9 */
     -webkit-transform: rotate(-45deg); /* Safari 3-8 */
     transform: rotate(-45deg);
@@ -21,7 +23,6 @@ div.minute-hand {
     left: 0%;
     width: 100%;
     height: 2%;
-    /* background-color: transaprent; */
     -ms-transform: rotate(0deg); /* IE 9 */
     -webkit-transform: rotate(0deg); /* Safari 3-8 */
     transform: rotate(0deg);
@@ -29,10 +30,10 @@ div.minute-hand {
 
 div.hour-hand {
     position: absolute;
-    top: 48.75%;
+    top: 48.5%;
     left: 0%;
     width: 100%;
-    height: 2.5%;
+    height: 3%;
     -ms-transform: rotate(90deg); /* IE 9 */
     -webkit-transform: rotate(90deg); /* Safari 3-8 */
     transform: rotate(90deg);
@@ -44,7 +45,7 @@ div.inner-circle {
     left: 2%;
     width: 96%;
     height: 96%;
-    background-color: black;
+    background-color: white;
     border-radius: 50%;
 }
 
@@ -52,7 +53,7 @@ div.outer-circle {
     position: absolute;
     width: 410px;
     height: 410px;
-    background-color: gray;
+    background-color: black;
     border-radius: 50%;
 }
 
@@ -79,21 +80,22 @@ div.outer-circle {
 }
 
 #min{
-  background: red;
+  background: black;
   width: 38%;
   height: 100%;
   border-radius: 90%;
 }
 
 #hour{
-  background: red;
+  background: black;
   width: 30%;
   height: 100%;
   border-radius: 90%;
 }
 </style>
-
 </head>
+
+
   <div class="outer-circle">
     <div class="inner-circle">
       <div class="second-hand">
