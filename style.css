@@ -2,7 +2,7 @@ body{
   background-color: lightgrey;
 }
 
-div.second-hand {
+#second-hand {
     position: absolute;
     top: 49.5%;
     left: 0%;
@@ -13,7 +13,7 @@ div.second-hand {
     transform: rotate(-4deg);
 }
 
-div.minute-hand {
+#minute-hand {
     position: absolute;
     top: 49%;
     left: 0%;
@@ -24,7 +24,7 @@ div.minute-hand {
     transform: rotate(100deg);
 }
 
-div.hour-hand {
+#hour-hand {
     position: absolute;
     top: 48.5%;
     left: 0%;
@@ -35,7 +35,7 @@ div.hour-hand {
     transform: rotate(190deg);
 }
 
-div.inner-circle {
+#inner-circle {
     position: absolute;
     top: 2%;
     left: 2%;
@@ -45,7 +45,7 @@ div.inner-circle {
     border-radius: 50%;
 }
 
-div.outer-circle {
+#outer-circle {
     position: absolute;
     width: 410px;
     height: 410px;
