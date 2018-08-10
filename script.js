@@ -1,3 +1,16 @@
+var innerCircle = document.getElementById("inner-circle");
+for(let i = 0; i<60; i++){
+  var diameter = document.createElement("div");
+  var visiblePartOfDiameter = document.createElement("div");
+  diameter.setAttribute("style", "position: absolute; top: 49.5%; left: 0%; width: 100%; height: 1%;");
+  visiblePartOfDiameter.setAttribute("style", "position:absolute;background-color: black; top: 0%; left:97%; width:3%; height:100%;");
+  diameter.style.transform = `rotate(${i*360/60}deg)`;
+  diameter.appendChild(visiblePartOfDiameter);
+  innerCircle.appendChild(diameter);
+}
+
+
+
 var secondHand = document.getElementById("second-hand");
 var minuteHand = document.getElementById("minute-hand");
 var hourHand = document.getElementById("hour-hand");
