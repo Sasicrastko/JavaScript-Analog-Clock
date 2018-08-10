@@ -8,9 +8,6 @@ body{
     left: 0%;
     width: 100%;
     height: 1%;
-    -ms-transform: rotate(-4deg); /* IE 9 */
-    -webkit-transform: rotate(-4deg); /* Safari 3-8 */
-    transform: rotate(-4deg);
 }
 
 #minute-hand {
@@ -19,9 +16,6 @@ body{
     left: 0%;
     width: 100%;
     height: 2%;
-    -ms-transform: rotate(100deg); /* IE 9 */
-    -webkit-transform: rotate(100deg); /* Safari 3-8 */
-    transform: rotate(100deg);
 }
 
 #hour-hand {
@@ -30,9 +24,6 @@ body{
     left: 0%;
     width: 100%;
     height: 3%;
-    -ms-transform: rotate(190deg); /* IE 9 */
-    -webkit-transform: rotate(190deg); /* Safari 3-8 */
-    transform: rotate(190deg);
 }
 
 #inner-circle {
