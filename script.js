@@ -4,7 +4,7 @@ for(let i = 0; i<60; i++){
   var diameter = document.createElement("div");
   var M = document.createElement("div");
   diameter.setAttribute("style", "position: absolute; top: 49.5%; left: 0%; width: 100%; height: 1%;");
-  M.setAttribute("style", "position:absolute;background-color: black; top: 0%; left:97%; width:3%; height:100%; box-shadow: 3px 3px 5px #888888;");
+  M.setAttribute("style", "position:absolute;background-color: black; top: 0%; left:97%; width:3%; height:100%;");
   diameter.style.transform = `rotate(${i*360/60}deg)`;
   diameter.appendChild(M);
   innerCircle.appendChild(diameter);
@@ -13,8 +13,8 @@ for(let i = 0; i<60; i++){
 for(let i = 0; i<12; i++){
   var diameter = document.createElement("div");
   var H = document.createElement("div");
-  diameter.setAttribute("style", "position: absolute; top: 49.5%; left: 0%; width: 100%; height: 1%;");
-  H.setAttribute("style", "position:absolute;background-color: red; top: 0%; left:97%; width:3%; height:100%; box-shadow: 3px 3px 5px #888888;");
+  diameter.setAttribute("style", "position: absolute; top: 49%; left: 0%; width: 100%; height: 2%;");
+  H.setAttribute("style", "position:absolute;background-color: black; top: 0%; left:96%; width:4%; height:100%;");
   diameter.style.transform = `rotate(${i*360/12}deg)`;
   diameter.appendChild(H);
   innerCircle.appendChild(diameter);
