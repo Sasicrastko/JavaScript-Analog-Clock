@@ -2,7 +2,7 @@ var secondHand = document.getElementById("second-hand");
 var minuteHand = document.getElementById("minute-hand");
 var hourHand = document.getElementById("hour-hand");
 
-function moveHands(){
+function setHands(){
   var d = new Date();
   var sec = d.getSeconds();
   var min = d.getMinutes();
@@ -17,5 +17,7 @@ function moveHands(){
   hourHand.style.transform = `rotate(${hourHandAngle}deg)`;
 }
 
-setInterval(function(){moveHands();}, 1000);
+
+setHands();
+setInterval(function(){setHands();}, 1000);
 
