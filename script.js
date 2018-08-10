@@ -8,9 +8,11 @@ function moveHands(){
   var d = new Date();
   var sec = d.getSeconds();
   var min = d.getMinutes();
-  var hour = d.getHours()%12;
+  var hour = d.getHours()%12; //only 12 hours on analog watch
 
-  var secondHandAngle = (sec*360)/60;
+  var secondHandAngle = (sec*360)/60-90; //-90 because CSS set hands horizontaly when angle is 0deg
+  var minuteHandAngle = (min*360)/60-90;
+  var hourHandAngle = (hour*360)/12-90;
 
   secondHand.style.transform = `rotate(${secondHandAngle}deg)`;
   minuteHand.style.transform = `rotate(${minuteHandAngle}deg)`;
