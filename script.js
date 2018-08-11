@@ -14,7 +14,7 @@ for(let i = 0; i<12; i++){
   var diameter = document.createElement("div");
   var H = document.createElement("div");
   diameter.setAttribute("style", "position: absolute; top: 48.5%; left: 0%; width: 100%; height: 3%;");
-  H.setAttribute("style", "position:absolute;background-color: black; top: 0%; left:95%; width:6%; height:100%;");
+  H.setAttribute("style", "position:absolute;background-color: black; top: 0%; left:95%; width:5%; height:100%;");
   diameter.style.transform = `rotate(${i*360/12}deg)`;
   diameter.appendChild(H);
   innerCircle.appendChild(diameter);
@@ -42,4 +42,11 @@ function setHands(){
 
 setHands();
 setInterval(function(){setHands();}, 1000);
+
+
+
+
+
+
+
 
