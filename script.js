@@ -1,5 +1,6 @@
 var innerCircle = document.getElementById("inner-circle");
 
+//create  minute scale
 for(let i = 0; i<60; i++){
   var diameter = document.createElement("div");
   var M = document.createElement("div");
@@ -10,6 +11,7 @@ for(let i = 0; i<60; i++){
   innerCircle.appendChild(diameter);
 }
 
+//create hour scale
 for(let i = 0; i<12; i++){
   var diameter = document.createElement("div");
   var H = document.createElement("div");
@@ -24,6 +26,7 @@ var secondHand = document.getElementById("second-hand");
 var minuteHand = document.getElementById("minute-hand");
 var hourHand = document.getElementById("hour-hand");
 
+//set hands function (using current time)
 function setHands(){
   var d = new Date();
   var sec = d.getSeconds();
@@ -41,7 +44,7 @@ function setHands(){
 
 
 setHands();
-setInterval(function(){setHands();}, 1000);
+setInterval(function(){setHands();}, 1000); //call setHands() each 1 second
 
 
 
